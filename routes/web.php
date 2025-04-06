@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
+use Illuminate\Support\Facades\Artisan;
 
 
 Route::group(['as' => 'user.'], function () {
@@ -14,8 +15,13 @@ Route::group(['as' => 'user.'], function () {
     Route::get('/courses', [homeController::class, 'courses'])->name('courses');
 });
 Route::get('test', function () {
-    return view('test');
+    $migrateOutput = Artisan::call('migrate');
+    $storageLinkOutput = Artisan::call('storage:link');
+
+    return "Migration: " . ($migrateOutput === 0 ? "Success" : "Failed") . 
+        "<br>Storage Link: " . ($storageLinkOutput === 0 ? "Success" : "Failed");
 })->name('test');
+
 
 
 
