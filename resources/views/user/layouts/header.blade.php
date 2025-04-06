@@ -94,9 +94,46 @@
                </a>
 
            </nav>
-           <button
-               class="md:hidden focus:outline-none bg-primary/10 p-2 rounded-md hover:bg-primary/20 transition-colors duration-300">
-               <i class="fas fa-bars text-primary"></i>
-           </button>
-       </div>
+        <!-- Mobile menu button -->
+        <button
+            id="mobile-menu-button"
+            class="md:hidden focus:outline-none bg-primary/10 p-2 rounded-md hover:bg-primary/20 transition-colors duration-300">
+            <i class="fas fa-bars text-primary"></i>
+        </button>
+
+        <!-- Mobile menu panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden fixed inset-0 z-50 md:hidden">
+            <div class="absolute inset-0 bg-black opacity-50" id="mobile-menu-overlay"></div>
+            <div class="absolute right-0 top-0 w-64 bg-white h-full shadow-lg p-4">
+                <div class="flex justify-between items-center mb-5">
+                    <h3 class="text-lg font-semibold text-primary">Menu</h3>
+                    <button id="close-menu" class="text-gray-500 hover:text-primary">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-3">
+                    <a href="{{ route('user.home') }}" class="{{ request()->routeIs('user.home') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Home</a>
+                    <a href="{{ route('user.notice') }}" class="{{ request()->routeIs('user.notice') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Notice</a>
+                    <a href="#about" class="text-gray-800 px-4 py-2 rounded-md hover:bg-primary/10">About</a>
+                    <a href="{{ route('user.courses') }}" class="{{ request()->routeIs('user.courses') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Courses</a>
+                    <a href="{{ route('user.faculty') }}" class="{{ request()->routeIs('user.faculty') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Faculty</a>
+                    <a href="{{ route('user.comingsoon') }}" class="text-gray-800 px-4 py-2 rounded-md hover:bg-primary/10">Admission</a>
+                    <a href="{{ route('user.comingsoon') }}" class="text-gray-800 px-4 py-2 rounded-md hover:bg-primary/10">Results</a>
+                </nav>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('mobile-menu-button').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.remove('hidden');
+            });
+            
+            document.getElementById('close-menu').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+            
+            document.getElementById('mobile-menu-overlay').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        </script>   </div>
    </header>
