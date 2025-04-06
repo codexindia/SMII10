@@ -20,8 +20,7 @@
      <nav class="mt-5 px-2">
          <a 
              class="group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md transition-all duration-300 cursor-pointer"
-             :class="currentTab === 'dashboard' ? 'bg-indigo-900 text-white' :
-                 'text-indigo-300 hover:text-white hover:bg-indigo-700'">
+             >
              <i class="fas fa-tachometer-alt mr-4" :class="sidebarOpen ? '' : 'md:mx-auto'"></i>
              <span x-show="sidebarOpen">Dashboard</span>
          </a>

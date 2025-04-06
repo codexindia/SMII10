@@ -11,26 +11,26 @@
             
             <form action="{{ route('admin.notice.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-                @if($notice->id)
+                @if(isset($notice->id))
                     <input type="hidden" name="id" value="{{ $notice->id }}">
                 @endif
                 <div class="mb-4">
-                    {!! Form::adText('title',$notice->title) !!}
+                    {!! Form::adText('title',$notice->title??"") !!}
                 </div>
                 <div class="mb-4">
-                    {!! Form::adTextArea('description',$notice->description) !!}
+                    {!! Form::adTextArea('description',$notice->description??"") !!}
                 </div>
                 <div class="mb-4 grid grid-cols-2 gap-4 items-center">
                     <div>
                         {!! Form::adFile('pdf', 'Upload PDF') !!}
-                        @if ($notice->file)
+                        @if (isset($notice->file))
                         <a href="{{ asset('' . $notice->file) }}" target="_blank" class="text-blue-600 hover:text-blue-900">
                             View PDF
                         </a>
                         @endif
                     </div>
                     <div class="flex items-center">
-                        <input type="checkbox" id="featured" name="featured" class="form-checkbox h-5 w-5 text-indigo-600" @if ($notice->isFeatured == 'yes')checked @endif>
+                        <input type="checkbox" id="featured" name="featured" class="form-checkbox h-5 w-5 text-indigo-600" @if (isset($notice->isFeatured) && $notice->isFeatured == 'yes')checked @endif>
                         <label for="featured" class="ml-2 text-gray-700">Set as Featured</label>
                     </div>
                 </div>

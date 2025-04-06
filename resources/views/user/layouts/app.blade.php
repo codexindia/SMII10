@@ -23,6 +23,24 @@
             },
         };
     </script>
+    <style>
+         .dark\:bg-gray-800 {
+            background-color: white !important;
+            border: 1px solid #008a00 !important;
+        }
+
+        .dark\:text-gray-300 {
+            color: #008a00 !important;
+        }
+
+        .dark\:bg-gray-900 {
+            background-color: white !important;
+        }
+
+        .dark\:text-white {
+            color: #008a00 !important;
+        }
+    </style>
     @yield('styles')
     
 </head>

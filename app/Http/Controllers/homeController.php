@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\notice;
 class homeController extends Controller
 {
     public function index()
     {
-        return view('user.home');
+        $data['notice'] = notice::orderBy('id', 'desc')->where('isFeatured','=','yes')->limit(8)->get();
+       
+        return view('user.home',$data);
     }
     public function about()
     {
@@ -24,7 +26,8 @@ class homeController extends Controller
     }
     public function notice()
     {
-        return view('user.notice');
+        $data['notice'] = notice::orderBy('id', 'desc')->paginate(15);
+        return view('user.notice',$data);
     }
     public function faculty()
     {

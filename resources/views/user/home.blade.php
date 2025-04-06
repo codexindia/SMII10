@@ -1,77 +1,63 @@
+@php
+    $noticeCol = ['primary', 'secondary', 'tertiary', 'accent', 'gray'];
+
+@endphp
 @extends('user.layouts.app')
 @section('content')
     <section class="py-4 bg-gray-50 border-b border-gray-200">
         <div class="container mx-auto">
             <div class="relative overflow-hidden" id="notice-slider">
                 <div class="flex transition-transform duration-500 ease-in-out" id="notice-slides">
-                    <!-- Notice 1 -->
-                    <div class="w-full flex-shrink-0 px-4">
-                        <div class="bg-primary/10 border-l-4 border-primary rounded-r-md p-4 flex items-center">
-                            <i class="fas fa-bullhorn text-primary text-xl mr-4"></i>
-                            <div>
-                                <h3 class="font-bold text-primary">
-                                    Emergency Notification
-                                </h3>
-                                <p class="text-gray-700">
-                                    Campus will be closed on July 25 due to scheduled
-                                    maintenance. All classes will be conducted online.
-                                </p>
+                    <!-- Notice Items -->
+                    @foreach ($notice as $index => $item)
+                        @php
+                            $colorIndex = $index % count($noticeCol);
+                            $color = $noticeCol[$colorIndex];
+                        @endphp
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div
+                                class="bg-{{ $color }}/10 border-l-4 border-{{ $color }} rounded-r-md p-4 flex items-center">
+                                <i class="fas fa-bullhorn text-{{ $color }} text-xl mr-4"></i>
+                                <div>
+                                    <h3 class="font-bold text-{{ $color }}">
+                                        {{ $item->title }}
+                                    </h3>
+                                    <p class="text-gray-700">
+                                        {{ \Illuminate\Support\Str::limit($item->description, 100, '...') }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Notice 2 -->
-                    <div class="w-full flex-shrink-0 px-4">
-                        <div class="bg-secondary/10 border-l-4 border-secondary rounded-r-md p-4 flex items-center">
-                            <i class="fas fa-calendar-alt text-secondary text-xl mr-4"></i>
-                            <div>
-                                <h3 class="font-bold text-secondary">Upcoming Event</h3>
-                                <p class="text-gray-700">
-                                    Annual cultural fest "Vibrance 2023" starts next week.
-                                    Register now to participate!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Notice 3 -->
-                    <div class="w-full flex-shrink-0 px-4">
-                        <div class="bg-tertiary/10 border-l-4 border-tertiary rounded-r-md p-4 flex items-center">
-                            <i class="fas fa-trophy text-tertiary text-xl mr-4"></i>
-                            <div>
-                                <h3 class="font-bold text-tertiary">Achievement</h3>
-                                <p class="text-gray-700">
-                                    Our students won first prize in the National Coding
-                                    Competition. Congratulations to the team!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
-                <!-- Controls -->
-                <button
-                    class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-8 h-8 flex items-center justify-center shadow-md z-10"
-                    id="prev-notice">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button
-                    class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-8 h-8 flex items-center justify-center shadow-md z-10"
-                    id="next-notice">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <!-- Controls - Only show if there are multiple notices -->
+                @if (count($notice) > 1)
+                    <button
+                        class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-8 h-8 flex items-center justify-center shadow-md z-10"
+                        id="prev-notice">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button
+                        class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-8 h-8 flex items-center justify-center shadow-md z-10"
+                        id="next-notice">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
 
-                <!-- Indicators -->
-                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex space-x-2 mb-2">
-                    <button class="w-2 h-2 rounded-full bg-primary" data-index="0"></button>
-                    <button class="w-2 h-2 rounded-full bg-gray-300" data-index="1"></button>
-                    <button class="w-2 h-2 rounded-full bg-gray-300" data-index="2"></button>
-                </div>
+                    <!-- Dynamic Indicators -->
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex space-x-2 mb-2" id="notice-indicators">
+                        @foreach ($notice as $index => $item)
+                            <button class="w-2 h-2 rounded-full {{ $index === 0 ? 'bg-primary' : 'bg-gray-300' }}"
+                                data-index="{{ $index }}"></button>
+                        @endforeach
+                    </div>
+                @endif
             </div>
         </div>
-
-
     </section>
+
+    <!-- Add slider JavaScript at the end of your file using  -->
+
     <!-- Hero Section -->
     <section id="home" class="bg-primary text-white py-20 overflow-hidden">
         <div class="container mx-auto px-4 flex flex-col items-center relative">
@@ -266,13 +252,13 @@
             </div>
 
             <!-- <div class="text-center mt-8">
-                  <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition duration-300 transform hover:-translate-y-1 shadow-md">
-                    Take a Virtual Tour
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                  </a>
-                </div> -->
+                          <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition duration-300 transform hover:-translate-y-1 shadow-md">
+                            Take a Virtual Tour
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                        </div> -->
         </div>
     </section>
     <!-- Training & Placement Partners Section -->
@@ -286,17 +272,21 @@
                 <div class="logos-slide flex items-center">
                     <!-- Partner Logos -->
                     <div class="mx-8 flex-shrink-0">
-                        <img src="{{ asset('user/images/collabera.png') }}" alt="Microsoft" class="h-12 md:h-16 object-contain" />
+                        <img src="{{ asset('user/images/collabera.png') }}" alt="Microsoft"
+                            class="h-12 md:h-16 object-contain" />
                     </div>
 
                     <div class="mx-8 flex-shrink-0">
-                        <img src="{{ asset('user/images/ifcokissan.png') }}" alt="Microsoft" class="h-12 md:h-16 object-contain" />
+                        <img src="{{ asset('user/images/ifcokissan.png') }}" alt="Microsoft"
+                            class="h-12 md:h-16 object-contain" />
                     </div>
                     <div class="mx-8 flex-shrink-0">
-                        <img src="{{ asset('user/images/jio-logo-icon.png') }}" alt="Microsoft" class="h-12 md:h-16 object-contain" />
+                        <img src="{{ asset('user/images/jio-logo-icon.png') }}" alt="Microsoft"
+                            class="h-12 md:h-16 object-contain" />
                     </div>
                     <div class="mx-8 flex-shrink-0">
-                        <img src="{{ asset('user/images/Paytm_logo.jpg') }}" alt="Microsoft" class="h-12 md:h-16 object-contain" />
+                        <img src="{{ asset('user/images/Paytm_logo.jpg') }}" alt="Microsoft"
+                            class="h-12 md:h-16 object-contain" />
                     </div>
                     <div class="mx-8 flex-shrink-0">
                         <img src="{{ asset('user/images/TCS_Tata_Consultancy_Services.webp') }}" alt="Microsoft"
@@ -317,10 +307,10 @@
                 </div>
             </div>
 
-            
+
         </div>
 
-      
+
 
         <style>
             .logos-slide {
@@ -702,6 +692,85 @@
 
             // Apply animation duration dynamically
             logoSlide.style.animation = `scroll ${duration}s linear infinite`;
+        });
+    </script>
+@endpush
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('notice-slider');
+            const slides = document.getElementById('notice-slides');
+            const prevBtn = document.getElementById('prev-notice');
+            const nextBtn = document.getElementById('next-notice');
+            const indicators = document.querySelectorAll('#notice-indicators button');
+
+            // Get total number of slides
+            const slideCount = slides.children.length;
+            if (slideCount <= 1) return; // No need for slider with only one item
+
+            let currentSlide = 0;
+            let slideWidth = slider.clientWidth;
+
+            // Update slide width on window resize
+            window.addEventListener('resize', function() {
+                slideWidth = slider.clientWidth;
+                updateSliderPosition();
+            });
+
+            // Update the slider position
+            function updateSliderPosition() {
+                slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    if (index === currentSlide) {
+                        indicator.classList.remove('bg-gray-300');
+                        indicator.classList.add('bg-primary');
+                    } else {
+                        indicator.classList.remove('bg-primary');
+                        indicator.classList.add('bg-gray-300');
+                    }
+                });
+            }
+
+            // Go to previous slide
+            prevBtn?.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                updateSliderPosition();
+            });
+
+            // Go to next slide
+            nextBtn?.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSliderPosition();
+            });
+
+            // Handle indicator clicks
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateSliderPosition();
+                });
+            });
+
+            // Auto-advance slides every 5 seconds
+            let interval = setInterval(function() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSliderPosition();
+            }, 5000);
+
+            // Pause auto-advance on hover
+            slider.addEventListener('mouseenter', function() {
+                clearInterval(interval);
+            });
+
+            // Resume auto-advance when mouse leaves
+            slider.addEventListener('mouseleave', function() {
+                interval = setInterval(function() {
+                    currentSlide = (currentSlide + 1) % slideCount;
+                    updateSliderPosition();
+                }, 5000);
+            });
         });
     </script>
 @endpush
