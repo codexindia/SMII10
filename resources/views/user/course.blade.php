@@ -61,63 +61,71 @@
   <section id="programs" class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-        Academic Departments
+      Academic Departments
       </h2>
       
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <!-- Department 1 -->
-        <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-laptop-code text-primary text-2xl"></i>
-          </div>
-          <h3 class="font-semibold text-gray-800">Computer Science</h3>
-          <p class="text-sm text-gray-600 mt-2">4 Programs</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
+      <!-- Department 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-laptop-code text-primary text-2xl"></i>
         </div>
-        
-        <!-- Department 2 -->
-        <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-chart-line text-secondary text-2xl"></i>
-          </div>
-          <h3 class="font-semibold text-gray-800">Business</h3>
-          <p class="text-sm text-gray-600 mt-2">3 Programs</p>
+        <h3 class="font-semibold text-gray-800">Computer Science</h3>
+        <p class="text-sm text-gray-600 mt-2">3 Programs</p>
+      </div>
+      
+      <!-- Department 2 -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-microchip text-secondary text-2xl"></i>
         </div>
-        
-        <!-- Department 3 -->
-        <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="bg-tertiary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-flask text-tertiary text-2xl"></i>
-          </div>
-          <h3 class="font-semibold text-gray-800">Science</h3>
-          <p class="text-sm text-gray-600 mt-2">5 Programs</p>
+        <h3 class="font-semibold text-gray-800">Electronics </h3>
+        <p class="text-sm text-gray-600 mt-2">2 Programs</p>
+      </div>
+      
+      <!-- Department 3 -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-tertiary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-book text-tertiary text-2xl"></i>
         </div>
-        
-        <!-- Department 4 -->
-        <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-language text-accent text-2xl"></i>
-          </div>
-          <h3 class="font-semibold text-gray-800">Languages</h3>
-          <p class="text-sm text-gray-600 mt-2">2 Programs</p>
+        <h3 class="font-semibold text-gray-800">Communication</h3>
+        <p class="text-sm text-gray-600 mt-2">1 Programs</p>
+      </div>
+      
+      <!-- Department 4 -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-seedling text-accent text-2xl"></i>
         </div>
-        
-        <!-- Department 5 -->
-        <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-palette text-primary text-2xl"></i>
-          </div>
-          <h3 class="font-semibold text-gray-800">Arts & Design</h3>
-          <p class="text-sm text-gray-600 mt-2">3 Programs</p>
+        <h3 class="font-semibold text-gray-800">Agriculture & Environmental Sciences</h3>
+        <p class="text-sm text-gray-600 mt-2">2 Programs</p>
+      </div>
+      
+      <!-- Department 5 -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-concierge-bell text-primary text-2xl"></i>
         </div>
-        
-        <!-- Department 6 -->
-        <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-heartbeat text-secondary text-2xl"></i>
-          </div>
-          <h3 class="font-semibold text-gray-800">Health Sciences</h3>
-          <p class="text-sm text-gray-600 mt-2">4 Programs</p>
+        <h3 class="font-semibold text-gray-800">Hospitality and Tourism</h3>
+        <p class="text-sm text-gray-600 mt-2">1 Programs</p>
+      </div>
+      
+      <!-- Department 6 -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-spa text-secondary text-2xl"></i>
         </div>
+        <h3 class="font-semibold text-gray-800">Beauty and Wellness</h3>
+        <p class="text-sm text-gray-600 mt-2">1 Programs</p>
+      </div>
+       <!-- Department 7 -->
+       <div class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-newspaper text-secondary text-2xl"></i>
+        </div>
+        <h3 class="font-semibold text-gray-800">Media Studies / Mass Communication</h3>
+        <p class="text-sm text-gray-600 mt-2">1 Programs</p>
+      </div>
       </div>
     </div>
   </section>

@@ -30,11 +30,11 @@
             <div class="flex items-center text-sm text-gray-600">
                 <div class="flex items-center mr-6">
                     <i class="fas fa-phone-alt text-primary mr-2"></i>
-                    <span>+1 (555) 123-4567</span>
+                    <span>+91 90646 54015</span>
                 </div>
                 <div class="hidden sm:flex items-center">
                     <i class="fas fa-envelope text-primary mr-2"></i>
-                    <span>info@aheskill.edu</span>
+                    <span>academyofeducationskilldevelop@gmail.com</span>
                 </div>
             </div>
             <div class="flex space-x-3">
@@ -120,7 +120,7 @@
                     <!-- Contact Info -->
                     <div class="text-gray-600 text-sm">
                         <p>For inquiries, please contact:</p>
-                        <p class="font-semibold">info@aheskill.edu | +1 (555) 123-4567</p>
+                        <p class="font-semibold">academyofeducationskilldevelop@gmail.com | +91 90646 54015</p>
 
                     </div>
                 </div>

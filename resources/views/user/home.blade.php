@@ -155,15 +155,14 @@
                 <!-- Gallery Item 1 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
-                        alt="Modern Library"
+                    <img src="{{ asset('user/campus/img1.jpg') }}"
+                        alt="AI lab"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-                        <h4 class="text-white text-xl font-bold">Modern Library</h4>
+                        <h4 class="text-white text-xl font-bold">AI lab</h4>
                         <p class="text-gray-200 text-sm mt-2">
-                            Our state-of-the-art library houses over 50,000 books and
-                            digital resources for students.
+                            Our state-of-the-art AI lab is equipped with advanced tools and technologies to foster innovation and research.
                         </p>
                     </div>
                 </div>
@@ -171,7 +170,7 @@
                 <!-- Gallery Item 2 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    <img src="{{ asset('user/campus/img2.jpg') }}"
                         alt="Computer Laboratory"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     <div
@@ -187,7 +186,7 @@
                 <!-- Gallery Item 3 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    <img src="{{ asset('user/campus/img3.jpg') }}"
                         alt="Science Laboratory"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     <div
@@ -516,14 +515,14 @@
                                 <i class="fas fa-phone text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Phone</h4>
-                                    <p class="text-gray-700">+1 (555) 123-4567</p>
+                                    <p class="text-gray-700">+91 90646 54015</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <i class="fas fa-envelope text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Email</h4>
-                                    <p class="text-gray-700">info@aheskill.edu</p>
+                                    <p class="text-gray-700">academyofeducationskilldevelop@gmail.com</p>
                                 </div>
                             </div>
                             <div class="flex items-start">

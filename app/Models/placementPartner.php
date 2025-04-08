@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class placementPartner extends Model
+class PlacementPartner extends Model
 {
     //
 }
