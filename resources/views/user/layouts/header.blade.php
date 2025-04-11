@@ -36,10 +36,10 @@
        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
            <div class="flex items-center">
                <a href="{{ route('user.home') }}" class="flex items-center">
-                   <i class="fas fa-graduation-cap text-primary text-3xl mr-3"></i>
+                <img src="{{ asset('user/logo.png') }}" class="h-14" alt="">
                    <div>
                        <h1
-                           class="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-tertiary text-transparent bg-clip-text leading-tight">
+                           class="text-md md:text-2xl font-bold bg-gradient-to-r from-primary to-tertiary text-transparent bg-clip-text leading-tight">
                            AHE Skill Development College
                        </h1>
                        <p class="text-xs text-gray-600">

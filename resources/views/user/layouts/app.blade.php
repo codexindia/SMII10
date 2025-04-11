@@ -16,7 +16,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#008a00",
+                        primary: "#3d99cd",
                         secondary: "#c31d60",
                         tertiary: "#4ab6b0",
                         accent: "#fc9a14",
