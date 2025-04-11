@@ -186,26 +186,26 @@
                 <!-- Gallery Item 3 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img3.jpg') }}"
+                    <img src="{{ asset('user/campus/img9.png') }}"
                         alt="Science Laboratory"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                    <div
+                    {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                         <h4 class="text-white text-xl font-bold">Science Labs</h4>
                         <p class="text-gray-200 text-sm mt-2">
                             Cutting-edge facilities for research and experiments in
                             physics, chemistry, and biology.
                         </p>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <!-- Gallery Item 4 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    <img src="{{ asset('user/campus/img8.jpg') }}"
                         alt="Collaborative Workspace"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                    <div
+                    {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                         <h4 class="text-white text-xl font-bold">
                             Collaborative Spaces
@@ -214,39 +214,39 @@
                             Dedicated areas where students can work together on projects
                             and exchange ideas.
                         </p>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <!-- Gallery Item 5 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    <img src="{{ asset('user/campus/img7.jpg') }}"
                         alt="Auditorium"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                    <div
+                    {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                         <h4 class="text-white text-xl font-bold">Modern Auditorium</h4>
                         <p class="text-gray-200 text-sm mt-2">
                             A 500-seat auditorium with advanced acoustics for lectures,
                             performances, and events.
                         </p>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <!-- Gallery Item 6 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                    <img src="{{ asset('user/campus/img6.jpg') }}"
                         alt="Sports Facilities"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                    <div
+                    {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                         <h4 class="text-white text-xl font-bold">Sports Complex</h4>
                         <p class="text-gray-200 text-sm mt-2">
                             Comprehensive sports facilities including indoor courts,
                             swimming pool, and fitness center.
                         </p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -502,10 +502,10 @@
                             Get In Touch
                         </h3>
                         <div class="space-y-4">
-                            <div class="flex items-start">
+                            <div class="flex items-start text-xs md:text-base">
                                 <i class="fas fa-map-marker-alt text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800">Address</h4>
+                                    <h4 class="font-semibold text-gray-800 ">Address</h4>
                                     <p class="text-gray-700">
                                         Panjarpara<br />Buniadpur, West Bengal 733125
                                     </p>
@@ -547,19 +547,19 @@
                         <div class="mt-8">
                             <h4 class="font-semibold text-gray-800 mb-3">Follow Us</h4>
                             <div class="flex space-x-4">
-                                <a href="#"
+                                <a href="https://www.facebook.com/share/1EYrRWD1fX/"
                                     class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-accent/90 transition duration-300">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#"
+                                <a href="https://wa.me/916296686487"
                                     class="bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary/90 transition duration-300">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-whatsapp"></i>
                                 </a>
-                                <a href="#"
+                                <a href="https://www.instagram.com/ahesd_college_?igsh=MTRqd2Z2aWN5dzRzOA=="
                                     class="bg-tertiary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-tertiary/90 transition duration-300">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#"
+                                <a href="https://www.linkedin.com/in/ahesd-college-5387a4358"
                                     class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary/90 transition duration-300">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
