@@ -511,21 +511,21 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex items-start">
+                            <div class="flex items-start  text-xs md:text-base">
                                 <i class="fas fa-phone text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Phone</h4>
                                     <p class="text-gray-700">+91 90646 54015</p>
                                 </div>
                             </div>
-                            <div class="flex items-start">
+                            <div class="flex items-start text-xs md:text-base" style="word-break: break-all;">
                                 <i class="fas fa-envelope text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Email</h4>
-                                    <p class="text-gray-700">academyofeducationskilldevelop@gmail.com</p>
+                                    <p class="text-gray-700" >academyofeducationskilldevelop@gmail.com</p>
                                 </div>
                             </div>
-                            <div class="flex items-start">
+                            <div class="flex items-start  text-xs md:text-base">
                                 <i class="fas fa-clock text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Office Hours</h4>
