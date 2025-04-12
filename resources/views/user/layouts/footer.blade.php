@@ -6,9 +6,12 @@
           <h3 class="text-xl font-bold mb-4">
             AHE Skill Development College
           </h3>
-          <p class="text-gray-400">
+          <p class="text-gray-400 mb-2">
             Empowering minds, Shaping futures. Join us in our journey of
             academic excellence and innovation.
+          </p>
+          <p class="text-gray-400">
+            In partnership with <span class="font-medium"><a href="https://aisect.org/" class="text-blue-400 hover:text-blue-600 transition duration-300">AISECT</a></span>, the All India Society for Electronics and Computer Technology.
           </p>
         </div>
         <div>
@@ -59,8 +62,9 @@
           </form>
         </div>
       </div>
-      <div class="pt-6 border-t border-gray-700 text-center text-gray-400">
-        <p>&copy; {{ date('Y') }} AHE Skill Development College. All rights reserved.</p>
+      <div class="pt-6 border-t border-gray-700 text-gray-400 flex flex-col md:flex-row justify-between items-center mb-4">
+        <p>&copy; {{ date('Y') }} AHE Skill Development . All rights reserved.</p>
+        <p>Designed & Developed by <a href="https://codexindia.com" class="text-blue-400 hover:text-blue-600 transition duration-300">Codexindia</a></p>
       </div>
     </div>
   </footer>

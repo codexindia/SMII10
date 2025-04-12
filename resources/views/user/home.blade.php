@@ -155,14 +155,14 @@
                 <!-- Gallery Item 1 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img1.jpg') }}"
-                        alt="AI lab"
+                    <img src="{{ asset('user/campus/img1.jpg') }}" alt="AI lab"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                         <h4 class="text-white text-xl font-bold">AI lab</h4>
                         <p class="text-gray-200 text-sm mt-2">
-                            Our state-of-the-art AI lab is equipped with advanced tools and technologies to foster innovation and research.
+                            Our state-of-the-art AI lab is equipped with advanced tools and technologies to foster
+                            innovation and research.
                         </p>
                     </div>
                 </div>
@@ -170,8 +170,7 @@
                 <!-- Gallery Item 2 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img2.jpg') }}"
-                        alt="Computer Laboratory"
+                    <img src="{{ asset('user/campus/img2.jpg') }}" alt="Computer Laboratory"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
@@ -186,8 +185,7 @@
                 <!-- Gallery Item 3 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img9.png') }}"
-                        alt="Science Laboratory"
+                    <img src="{{ asset('user/campus/img9.png') }}" alt="Science Laboratory"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
@@ -202,8 +200,7 @@
                 <!-- Gallery Item 4 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img8.jpg') }}"
-                        alt="Collaborative Workspace"
+                    <img src="{{ asset('user/campus/img8.jpg') }}" alt="Collaborative Workspace"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
@@ -220,8 +217,7 @@
                 <!-- Gallery Item 5 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img7.jpg') }}"
-                        alt="Auditorium"
+                    <img src="{{ asset('user/campus/img7.jpg') }}" alt="Auditorium"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
@@ -236,8 +232,7 @@
                 <!-- Gallery Item 6 -->
                 <div
                     class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img6.jpg') }}"
-                        alt="Sports Facilities"
+                    <img src="{{ asset('user/campus/img6.jpg') }}" alt="Sports Facilities"
                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                     {{-- <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
@@ -251,13 +246,13 @@
             </div>
 
             <!-- <div class="text-center mt-8">
-                          <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition duration-300 transform hover:-translate-y-1 shadow-md">
-                            Take a Virtual Tour
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                          </a>
-                        </div> -->
+                                  <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition duration-300 transform hover:-translate-y-1 shadow-md">
+                                    Take a Virtual Tour
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                      <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                  </a>
+                                </div> -->
         </div>
     </section>
     <!-- Training & Placement Partners Section -->
@@ -381,77 +376,7 @@
         </div>
     </section>
     <!-- Courses Section -->
-    <section id="courses" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-                Our Courses
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Course 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Computer Science" class="w-full h-48 object-cover" />
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-primary">
-                            Computer Science
-                        </h3>
-                        <p class="text-gray-700 mb-4">
-                            Comprehensive program covering programming, algorithms, data
-                            structures, and software development.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-tertiary font-semibold">Duration: 4 years</span>
-                            <a href="#"
-                                class="bg-primary text-white py-2 px-4 rounded hover:bg-primary/90 transition duration-300">Learn
-                                More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Business Administration" class="w-full h-48 object-cover" />
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-primary">
-                            Business Administration
-                        </h3>
-                        <p class="text-gray-700 mb-4">
-                            Learn management principles, marketing strategies, finance,
-                            and organizational leadership.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-tertiary font-semibold">Duration: 3 years</span>
-                            <a href="#"
-                                class="bg-primary text-white py-2 px-4 rounded hover:bg-primary/90 transition duration-300">Learn
-                                More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Data Science" class="w-full h-48 object-cover" />
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-primary">
-                            Data Science
-                        </h3>
-                        <p class="text-gray-700 mb-4">
-                            Master data analysis, machine learning, statistical modeling,
-                            and big data technologies.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-tertiary font-semibold">Duration: 2 years</span>
-                            <a href="#"
-                                class="bg-primary text-white py-2 px-4 rounded hover:bg-primary/90 transition duration-300">Learn
-                                More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   @include('user.components.featuredCourse')
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white">
@@ -522,7 +447,7 @@
                                 <i class="fas fa-envelope text-tertiary text-xl mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Email</h4>
-                                    <p class="text-gray-700" >academyofeducationskilldevelop@gmail.com</p>
+                                    <p class="text-gray-700">academyofeducationskilldevelop@gmail.com</p>
                                 </div>
                             </div>
                             <div class="flex items-start  text-xs md:text-base">
@@ -623,9 +548,8 @@
             opacity: 0;
         }
     </style>
+
 @endsection
-@push('styles')
-@endpush
 @push('scripts')
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -637,6 +561,7 @@
 
             // Open modal
             openMapBtn.addEventListener("click", function() {
+
                 mapModal.classList.remove("hidden");
                 document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
             });
@@ -673,103 +598,56 @@
                     document.body.style.overflow = "auto";
                 }
             });
+            
         });
     </script>
-
-    <script>
+      <script>
+        // Sliding notices functionality
         document.addEventListener("DOMContentLoaded", function() {
-            const logoSlide = document.querySelector(".logos-slide");
-            const logos = logoSlide.innerHTML;
-
-            // Clone logos and append to create seamless loop effect
-            logoSlide.innerHTML += logos;
-
-            // Calculate animation duration based on number of logos
-            const logoCount =
-                document.querySelectorAll(".logos-slide > div").length;
-            const duration = logoCount * 0.8; // 2 seconds per logo
-
-            // Apply animation duration dynamically
-            logoSlide.style.animation = `scroll ${duration}s linear infinite`;
-        });
-    </script>
-@endpush
-@push('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const slider = document.getElementById('notice-slider');
-            const slides = document.getElementById('notice-slides');
-            const prevBtn = document.getElementById('prev-notice');
-            const nextBtn = document.getElementById('next-notice');
-            const indicators = document.querySelectorAll('#notice-indicators button');
-
-            // Get total number of slides
-            const slideCount = slides.children.length;
-            if (slideCount <= 1) return; // No need for slider with only one item
-
+            const slides = document.getElementById("notice-slides");
+            const prevBtn = document.getElementById("prev-notice");
+            const nextBtn = document.getElementById("next-notice");
+            const indicators = document.querySelectorAll("[data-index]");
             let currentSlide = 0;
-            let slideWidth = slider.clientWidth;
+            const slideCount = {{ $notice->count() }}; // Total number of slides
 
-            // Update slide width on window resize
-            window.addEventListener('resize', function() {
-                slideWidth = slider.clientWidth;
-                updateSliderPosition();
-            });
-
-            // Update the slider position
-            function updateSliderPosition() {
-                slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            function updateSlides() {
+                slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 
                 // Update indicators
                 indicators.forEach((indicator, index) => {
                     if (index === currentSlide) {
-                        indicator.classList.remove('bg-gray-300');
-                        indicator.classList.add('bg-primary');
+                        indicator.classList.remove("bg-gray-300");
+                        indicator.classList.add("bg-primary");
                     } else {
-                        indicator.classList.remove('bg-primary');
-                        indicator.classList.add('bg-gray-300');
+                        indicator.classList.remove("bg-primary");
+                        indicator.classList.add("bg-gray-300");
                     }
                 });
             }
 
-            // Go to previous slide
-            prevBtn?.addEventListener('click', function() {
+            prevBtn.addEventListener("click", function() {
                 currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-                updateSliderPosition();
+                updateSlides();
             });
 
-            // Go to next slide
-            nextBtn?.addEventListener('click', function() {
+            nextBtn.addEventListener("click", function() {
                 currentSlide = (currentSlide + 1) % slideCount;
-                updateSliderPosition();
+                updateSlides();
             });
 
-            // Handle indicator clicks
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', function() {
-                    currentSlide = index;
-                    updateSliderPosition();
+            indicators.forEach((indicator) => {
+                indicator.addEventListener("click", function() {
+                    currentSlide = parseInt(this.dataset.index);
+                    updateSlides();
                 });
             });
 
-            // Auto-advance slides every 5 seconds
-            let interval = setInterval(function() {
+            // Auto slide every 5 seconds
+            setInterval(function() {
                 currentSlide = (currentSlide + 1) % slideCount;
-                updateSliderPosition();
-            }, 5000);
-
-            // Pause auto-advance on hover
-            slider.addEventListener('mouseenter', function() {
-                clearInterval(interval);
-            });
-
-            // Resume auto-advance when mouse leaves
-            slider.addEventListener('mouseleave', function() {
-                interval = setInterval(function() {
-                    currentSlide = (currentSlide + 1) % slideCount;
-                    updateSliderPosition();
-                }, 5000);
-            });
+                updateSlides();
+            }, 3000);
         });
     </script>
 @endpush

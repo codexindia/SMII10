@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#008a00",
+                        primary: "#3d99cd",
                         secondary: "#c31d60",
                         tertiary: "#4ab6b0",
                         accent: "#fc9a14",
@@ -38,21 +38,22 @@
                 </div>
             </div>
             <div class="flex space-x-3">
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                <a href="https://wa.me/916296686487" class="text-gray-600 hover:text-primary transition-colors duration-300">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                <a href="https://www.facebook.com/share/1EYrRWD1fX/" class="text-gray-600 hover:text-primary transition-colors duration-300">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="text-gray-600 hover:text-tertiary transition-colors duration-300">
+ 
+                <a href="https://www.instagram.com/ahesd_college_?igsh=MTRqd2Z2aWN5dzRzOA==" class="text-gray-600 hover:text-tertiary transition-colors duration-300">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#" class="text-gray-600 hover:text-accent transition-colors duration-300">
+                <a href="https://www.linkedin.com/in/ahesd-college-5387a4358" class="text-gray-600 hover:text-accent transition-colors duration-300">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                {{-- <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
                     <i class="fab fa-youtube"></i>
-                </a>
+                </a> --}}
             </div>
         </div>
     </div>

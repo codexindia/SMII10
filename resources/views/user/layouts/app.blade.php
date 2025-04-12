@@ -43,7 +43,7 @@
             color: #008a00 !important;
         }
     </style>
-    @yield('styles')
+    @stack('styles')
 
 </head>
 
@@ -53,56 +53,8 @@
         @yield('content')
     </main>
     @include('user.layouts.footer')
-    @yield('scripts')
-    <script>
-        // Sliding notices functionality
-        document.addEventListener("DOMContentLoaded", function() {
-            const slides = document.getElementById("notice-slides");
-            const prevBtn = document.getElementById("prev-notice");
-            const nextBtn = document.getElementById("next-notice");
-            const indicators = document.querySelectorAll("[data-index]");
-            let currentSlide = 0;
-            const slideCount = 3;
-
-            function updateSlides() {
-                slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-                // Update indicators
-                indicators.forEach((indicator, index) => {
-                    if (index === currentSlide) {
-                        indicator.classList.remove("bg-gray-300");
-                        indicator.classList.add("bg-primary");
-                    } else {
-                        indicator.classList.remove("bg-primary");
-                        indicator.classList.add("bg-gray-300");
-                    }
-                });
-            }
-
-            prevBtn.addEventListener("click", function() {
-                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-                updateSlides();
-            });
-
-            nextBtn.addEventListener("click", function() {
-                currentSlide = (currentSlide + 1) % slideCount;
-                updateSlides();
-            });
-
-            indicators.forEach((indicator) => {
-                indicator.addEventListener("click", function() {
-                    currentSlide = parseInt(this.dataset.index);
-                    updateSlides();
-                });
-            });
-
-            // Auto slide every 5 seconds
-            setInterval(function() {
-                currentSlide = (currentSlide + 1) % slideCount;
-                updateSlides();
-            }, 5000);
-        });
-    </script>
+    @stack('scripts')
+  
 </body>
 
 </html>
