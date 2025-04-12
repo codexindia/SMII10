@@ -8,7 +8,8 @@
         content="Academy of Higher Education, AHE, skill development, higher education, vocational training, computer science courses, business administration, data science, Buniadpur college, West Bengal education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Sudipto" />
-    <title>AHE Skill Development College - @yield('title', 'Explore Quality Education')</title>
+    <link rel="icon" href="{{ asset('user/logo.png') }}" type="image/png">
+    <title>AHE Skill Development - @yield('title', 'Explore Quality Education')</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script>
