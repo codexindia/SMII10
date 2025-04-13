@@ -61,8 +61,8 @@
                    class="{{ request()->routeIs('user.notice') ? 'text-primary bg-primary/10' : '' }} px-4 py-2 rounded-md text-gray-800 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all duration-300 relative group">
                    Notice
                </a>
-               <a href="#about"
-                   class="px-4 py-2 rounded-md text-gray-800 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all duration-300 relative group">
+               <a href="{{ route('user.about') }}"
+                   class="{{ request()->routeIs('user.about') ? 'text-primary bg-primary/10' : '' }} px-4 py-2 rounded-md text-gray-800 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all duration-300 relative group">
                    About
                    <span
                        class="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -115,7 +115,7 @@
                            class="{{ request()->routeIs('user.home') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Home</a>
                        <a href="{{ route('user.notice') }}"
                            class="{{ request()->routeIs('user.notice') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Notice</a>
-                       <a href="#about" class="text-gray-800 px-4 py-2 rounded-md hover:bg-primary/10">About</a>
+                       <a href="{{ route('user.about') }}"  class="{{ request()->routeIs('user.about') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">About</a>
                        <a href="{{ route('user.courses') }}"
                            class="{{ request()->routeIs('user.courses') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Courses</a>
                        <a href="{{ route('user.faculty') }}"

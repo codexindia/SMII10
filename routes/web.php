@@ -13,6 +13,7 @@ Route::group(['as' => 'user.'], function () {
     Route::get('notice',[homeController::class, 'notice'])->name('notice');
     Route::get('faculty',[homeController::class, 'faculty'])->name('faculty');
     Route::get('/courses', [homeController::class, 'courses'])->name('courses');
+    Route::get('/about', [homeController::class, 'about'])->name('about');
 });
 Route::get('test', function () {
     $migrateOutput = Artisan::call('migrate');
