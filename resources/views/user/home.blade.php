@@ -153,34 +153,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery Item 1 -->
-                <div
-                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img1.jpg') }}" alt="AI lab"
-                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-                        <h4 class="text-white text-xl font-bold">AI lab</h4>
-                        <p class="text-gray-200 text-sm mt-2">
-                            Our state-of-the-art AI lab is equipped with advanced tools and technologies to foster
-                            innovation and research.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div
-                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="{{ asset('user/campus/img2.jpg') }}" alt="Computer Laboratory"
-                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-                        <h4 class="text-white text-xl font-bold">Computer Labs</h4>
-                        <p class="text-gray-200 text-sm mt-2">
-                            Equipped with the latest hardware and software to support
-                            hands-on learning experiences.
-                        </p>
-                    </div>
-                </div>
+              
 
                 <!-- Gallery Item 3 -->
                 <div
@@ -243,16 +216,28 @@
                         </p>
                     </div> --}}
                 </div>
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="{{ asset('user/campus/img10.jpg') }}" alt="Sports Facilities"
+                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="{{ asset('user/campus/img11.jpg') }}" alt="Sports Facilities"
+                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+
+                </div>
             </div>
 
             <!-- <div class="text-center mt-8">
-                                  <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition duration-300 transform hover:-translate-y-1 shadow-md">
-                                    Take a Virtual Tour
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                                      <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                  </a>
-                                </div> -->
+                                      <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition duration-300 transform hover:-translate-y-1 shadow-md">
+                                        Take a Virtual Tour
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                      </a>
+                                    </div> -->
         </div>
     </section>
     <!-- Training & Placement Partners Section -->
@@ -376,7 +361,7 @@
         </div>
     </section>
     <!-- Courses Section -->
-   @include('user.components.featuredCourse')
+    @include('user.components.featuredCourse')
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white">
@@ -598,10 +583,10 @@
                     document.body.style.overflow = "auto";
                 }
             });
-            
+
         });
     </script>
-      <script>
+    <script>
         // Sliding notices functionality
         document.addEventListener("DOMContentLoaded", function() {
             const slides = document.getElementById("notice-slides");
