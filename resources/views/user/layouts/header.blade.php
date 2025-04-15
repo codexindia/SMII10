@@ -35,18 +35,22 @@
    <header class="bg-white shadow-lg sticky top-0 z-50">
        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
            <div class="flex items-center">
-               <a href="{{ route('user.home') }}" class="flex items-center">
-                <img src="{{ asset('user/logo.png') }}" class="h-14" alt="">
-                   <div>
-                       <h1
-                           class="text-md md:text-2xl font-bold bg-gradient-to-r from-primary to-tertiary text-transparent bg-clip-text leading-tight">
-                           AHE Skill Development College
-                       </h1>
-                       <p class="text-xs text-gray-600">
-                           Academy of Higher Education and Skill Development
-                       </p>
-                   </div>
-               </a>
+            <a href="{{ route('user.home') }}" class="flex items-center">
+                <img src="{{ asset('user/logo.png') }}" class="h-12 md:h-14 " alt="">
+                <div>
+                    <h1
+                        class="text-md md:text-2xl font-bold bg-gradient-to-r from-primary to-tertiary text-transparent bg-clip-text leading-tight">
+                        AHE Skill Development College
+                    </h1>
+                    <p class="text-xs text-gray-600 hidden md:block">
+                        Academy of Higher Education and Skill Development
+                    </p>
+                    <p class="text-xs font-semibold text-primary">
+                        Approved by AISECT (UGC & AICTE)
+                    </p>
+                </div>
+            </a>
+            
            </div>
 
            <nav class="hidden md:flex space-x-1">
