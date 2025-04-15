@@ -314,7 +314,8 @@
 
             <!-- Programs List - More formal academic style -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="overflow-x-auto">
+                <!-- Table for medium screens and up (hidden on mobile) -->
+                <div class="hidden md:block overflow-x-auto">
                     <table class="w-full">
                         <thead class="bg-gray-50 border-b">
                             <tr>
@@ -322,7 +323,6 @@
                                 <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">Department</th>
                                 <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">Duration</th>
                                 <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">Level</th>
-
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200">
@@ -337,16 +337,41 @@
                                     <td class="px-6 py-4 text-sm text-gray-500">{{ $course->duration }} Year</td>
                                     <td class="px-6 py-4">
                                         <span
-                                            class="@if($course->level == 'certificate') bg-accent/10  text-accent @else bg-tertiary/10  text-tertiary @endif text-xs font-medium px-2 py-1 rounded">{{ ucwords($course->level) }}</span>
+                                            class="@if($course->level == 'certificate') bg-accent/10 text-accent @else bg-tertiary/10 text-tertiary @endif text-xs font-medium px-2 py-1 rounded">{{ ucwords($course->level) }}</span>
                                     </td>
                                 </tr>
                             @endforeach
-
-
-
-
                         </tbody>
                     </table>
+                </div>
+                
+                <!-- Mobile card view (visible only on small screens) -->
+                <div class="md:hidden divide-y divide-gray-200">
+                    @foreach ($courses as $course)
+                        <div class="p-5 hover:bg-gray-50">
+                            <!-- Program level badge - moved to top -->
+                            <span class="inline-block @if($course->level == 'certificate') bg-accent/10 text-accent @else bg-tertiary/10 text-tertiary @endif text-xs font-medium px-2 py-1 rounded mb-2">
+                                {{ ucwords($course->level) }}
+                            </span>
+                            
+                            <!-- Program name -->
+                            <h4 class="text-base font-medium text-gray-800 mb-3">
+                                {{ ucwords($course->level) }} in {{ ucwords($course->name) }}
+                            </h4>
+                            
+                            <!-- Program details in vertical layout -->
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="w-24 flex-shrink-0 text-gray-500 font-medium">Department:</span>
+                                    <span class="text-gray-700">{{ $course->name }}</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-24 flex-shrink-0 text-gray-500 font-medium">Duration:</span>
+                                    <span class="text-gray-700">{{ $course->duration }} Year</span>
+                                </li>
+                            </ul>
+                        </div>
+                    @endforeach
                 </div>
             </div>
 
