@@ -14,7 +14,7 @@ Route::group(['as' => 'user.'], function () {
     Route::get('faculty',[homeController::class, 'faculty'])->name('faculty');
     Route::get('/courses', [homeController::class, 'courses'])->name('courses');
     Route::get('/about', [homeController::class, 'about'])->name('about');
-    Route::get('/courses/tab/{slug}', [App\Http\Controllers\HomeController::class, 'getCourseTabContent']);
+    Route::get('/courses/tab/{slug}', [homeController::class, 'getCourseTabContent']);
 });
 Route::get('test', function () {
     $migrateOutput = Artisan::call('migrate');
