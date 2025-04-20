@@ -24,7 +24,7 @@
                 @if($subcategoryData['courses']->count() > 5)
                     <div class="mt-4 flex justify-center">
                         <button class="show-more-mobile text-primary hover:underline text-sm flex items-center py-2 px-4 border border-primary rounded-full"
-                            data-target="{{ $category->slug }}-{{ $subcategoryData['info']->id }}-mobile">
+                            data-target="{{ $category->slug }}-{{ $subcategoryData['info']->id }}">
                             Show more courses <i class="fas fa-chevron-down ml-1"></i>
                         </button>
                     </div>
