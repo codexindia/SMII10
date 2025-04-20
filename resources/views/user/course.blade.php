@@ -16,7 +16,7 @@
                         class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105">
                         Explore Programs
                     </a>
-                    <a href="#campus-tour"
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf40_m2r8tP4VH3wk0CpZeMh0QLpWGi772ChkUBjd2kbBvBBQ/viewform?usp=sharing"
                         class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-105">
                         Schedule Campus Tour
                     </a>
@@ -38,8 +38,15 @@
                         <i class="fas fa-chalkboard-teacher text-primary text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-800">Expert Faculty</h3>
-                    <p class="text-gray-600">Learn directly from industry professionals and experienced educators in
-                        interactive classroom settings.</p>
+                    <p class="text-gray-600">Learn from instructors with Industry experience,
+                        Doctoral qualifications,
+                        Research publications,
+                        Practical expertise,
+                        Professional certifications,
+                        Mentorship abilities,
+                        Regular training programs,
+                        Corporate connections,
+                        Subject matter experts</p>
                 </div>
 
                 <div class="bg-gray-50 rounded-lg p-6 text-center">
@@ -47,8 +54,15 @@
                         <i class="fas fa-laptop text-primary text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-800">Modern Facilities</h3>
-                    <p class="text-gray-600">Access cutting-edge labs, libraries, and learning spaces equipped with the
-                        latest technology.</p>
+                    <p class="text-gray-600">Access cutting-edge Digital classroom,
+                        Free wifi,
+                        Play ground,
+                        CCTV surveillance,
+                        Bio-Metric Attendance,
+                        Eco friendly atmosphere,
+                        AI-ML Atal Tinkering lab ,
+                        IT lab,
+                        Agriculture lab</p>
                 </div>
 
                 <div class="bg-gray-50 rounded-lg p-6 text-center">
@@ -56,8 +70,15 @@
                         <i class="fas fa-users text-primary text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-800">Community</h3>
-                    <p class="text-gray-600">Join a vibrant campus community with networking opportunities, clubs, and
-                        events.</p>
+                    <p class="text-gray-600">Join a vibrant campus community with Group discussion
+                        Sector Visit,
+                        Networking opportunities,
+                        Sport tournament,
+                        Conference,
+                        Job fare,
+                        Hackathons & Ideathons,
+                        Technical events,
+                        Talent programme</p>
                 </div>
             </div>
         </div>

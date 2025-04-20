@@ -18,16 +18,16 @@
           <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2">
             <li>
-              <a href="#home" class="text-gray-400 hover:text-tertiary transition duration-300">Home</a>
+              <a href="{{ route('user.home') }}" class="text-gray-400 hover:text-tertiary transition duration-300">Home</a>
             </li>
             <li>
-              <a href="#about" class="text-gray-400 hover:text-tertiary transition duration-300">About Us</a>
+              <a href="{{ route('user.about') }}" class="text-gray-400 hover:text-tertiary transition duration-300">About Us</a>
             </li>
             <li>
-              <a href="#courses" class="text-gray-400 hover:text-tertiary transition duration-300">Courses</a>
+              <a href="{{ route('user.courses') }}" class="text-gray-400 hover:text-tertiary transition duration-300">Courses</a>
             </li>
             <li>
-              <a href="#faculty" class="text-gray-400 hover:text-tertiary transition duration-300">Faculty</a>
+              <a href="{{ route('user.faculty') }}" class="text-gray-400 hover:text-tertiary transition duration-300">Faculty</a>
             </li>
           </ul>
         </div>
