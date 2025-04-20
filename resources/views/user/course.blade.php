@@ -85,84 +85,7 @@
     </section>
 
     <!-- Academic Departments Section - Instead of Categories -->
-    <section id="programs" class="py-16 bg-gray-50 border-t border-gray-200">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
-                Academic Departments
-            </h2>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
-                <!-- Department 1 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-laptop-code text-primary text-2xl"></i>
-                    </div>
-                    <h5 class="font-semibold text-gray-800 text-sm">Computer Science</h5>
-                    <p class="text-sm text-gray-600 mt-2">3 Programs</p>
-                </div>
-
-                <!-- Department 2 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-microchip text-secondary text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-gray-800">Electronics </h3>
-                    <p class="text-sm text-gray-600 mt-2">2 Programs</p>
-                </div>
-
-                <!-- Department 3 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-tertiary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-book text-tertiary text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-gray-800">Communication</h3>
-                    <p class="text-sm text-gray-600 mt-2">1 Programs</p>
-                </div>
-
-                <!-- Department 4 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-accent/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-seedling text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-gray-800 text-sm">Agriculture & Environmental Sciences</h3>
-                    <p class="text-sm text-gray-600 mt-2">2 Programs</p>
-                </div>
-
-                <!-- Department 5 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-concierge-bell text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-gray-800 text-sm">Hospitality and Tourism</h3>
-                    <p class="text-sm text-gray-600 mt-2">1 Programs</p>
-                </div>
-
-                <!-- Department 6 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-spa text-secondary text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-gray-800">Beauty and Wellness</h3>
-                    <p class="text-sm text-gray-600 mt-2">1 Programs</p>
-                </div>
-                <!-- Department 7 -->
-                <div
-                    class="bg-white shadow-md rounded-lg p-6 text-center cursor-pointer transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                    <div class="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-newspaper text-secondary text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-gray-800 text-sm">Media Studies / Mass Communication</h3>
-                    <p class="text-sm text-gray-600 mt-2">1 Programs</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('user.components.courses')
 
     <!-- Featured Programs Section -->
     <section class="py-16 bg-white">
@@ -313,20 +236,20 @@
             <!-- Filters -->
             <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div class="flex flex-wrap gap-3">
-                    <a href="{{ route('user.courses').'#crsTble' }}"
-                        class="border border-gray-300 {{ request()->get('filter') == null?'bg-primary text-white hover:bg-primary/90':'bg-white text-gray-700 hover:bg-gray-50'}}  px-4 py-2 rounded-full text-sm  transition duration-300">
-                        All Programs 
+                    <a href="{{ route('user.courses') . '#crsTble' }}"
+                        class="border border-gray-300 {{ request()->get('filter') == null ? 'bg-primary text-white hover:bg-primary/90' : 'bg-white text-gray-700 hover:bg-gray-50' }}  px-4 py-2 rounded-full text-sm  transition duration-300">
+                        All Programs
                     </a>
-                    <a href="{{ route('user.courses') . '?filter=skill'.'#crsTble' }}"
-                        class="{{ request()->get('filter') == 'skill'?'bg-primary text-white hover:bg-primary/90':'bg-white text-gray-700 hover:bg-gray-50'}} px-4 py-2 rounded-full text-sm border border-gray-300  transition duration-300">
+                    <a href="{{ route('user.courses') . '?filter=skill' . '#crsTble' }}"
+                        class="{{ request()->get('filter') == 'skill' ? 'bg-primary text-white hover:bg-primary/90' : 'bg-white text-gray-700 hover:bg-gray-50' }} px-4 py-2 rounded-full text-sm border border-gray-300  transition duration-300">
                         Skill Development
                     </a>
-                    <a href="{{ route('user.courses') . '?filter=academic'.'#crsTble' }}"
-                        class="{{ request()->get('filter') == 'academic'?'bg-primary text-white hover:bg-primary/90':'bg-white text-gray-700 hover:bg-gray-50'}} px-4 py-2 rounded-full text-sm border border-gray-300  transition duration-300">
+                    <a href="{{ route('user.courses') . '?filter=academic' . '#crsTble' }}"
+                        class="{{ request()->get('filter') == 'academic' ? 'bg-primary text-white hover:bg-primary/90' : 'bg-white text-gray-700 hover:bg-gray-50' }} px-4 py-2 rounded-full text-sm border border-gray-300  transition duration-300">
                         Academic Courses
                     </a>
-                    <a href="{{ route('user.courses') . '?filter=management'.'#crsTble' }}"
-                        class="{{ request()->get('filter') == 'management'?'bg-primary text-white hover:bg-primary/90':'bg-white text-gray-700 hover:bg-gray-50'}} px-4 py-2 rounded-full text-sm border border-gray-300  transition duration-300">
+                    <a href="{{ route('user.courses') . '?filter=management' . '#crsTble' }}"
+                        class="{{ request()->get('filter') == 'management' ? 'bg-primary text-white hover:bg-primary/90' : 'bg-white text-gray-700 hover:bg-gray-50' }} px-4 py-2 rounded-full text-sm border border-gray-300  transition duration-300">
                         Management Courses
                     </a>
 
@@ -358,28 +281,29 @@
                                     <td class="px-6 py-4 text-sm text-gray-500">{{ $course->duration }} Year</td>
                                     <td class="px-6 py-4">
                                         <span
-                                            class="@if($course->level == 'certificate') bg-accent/10 text-accent @else bg-tertiary/10 text-tertiary @endif text-xs font-medium px-2 py-1 rounded">{{ ucwords($course->level) }}</span>
+                                            class="@if ($course->level == 'certificate') bg-accent/10 text-accent @else bg-tertiary/10 text-tertiary @endif text-xs font-medium px-2 py-1 rounded">{{ ucwords($course->level) }}</span>
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
                 </div>
-                
+
                 <!-- Mobile card view (visible only on small screens) -->
                 <div class="md:hidden divide-y divide-gray-200">
                     @foreach ($courses as $course)
                         <div class="p-5 hover:bg-gray-50">
                             <!-- Program level badge - moved to top -->
-                            <span class="inline-block @if($course->level == 'certificate') bg-accent/10 text-accent @else bg-tertiary/10 text-tertiary @endif text-xs font-medium px-2 py-1 rounded mb-2">
+                            <span
+                                class="inline-block @if ($course->level == 'certificate') bg-accent/10 text-accent @else bg-tertiary/10 text-tertiary @endif text-xs font-medium px-2 py-1 rounded mb-2">
                                 {{ ucwords($course->level) }}
                             </span>
-                            
+
                             <!-- Program name -->
                             <h4 class="text-base font-medium text-gray-800 mb-3">
                                 {{ ucwords($course->level) }} in {{ ucwords($course->name) }}
                             </h4>
-                            
+
                             <!-- Program details in vertical layout -->
                             <ul class="space-y-2 text-sm">
                                 <li class="flex items-center">
@@ -417,64 +341,6 @@
             </div> --}}
         </div>
     </section>
-
-    <!-- Campus Facilities Section - New section -->
-    {{-- <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
-                Our Campus Facilities
-            </h2>
-            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-                Our state-of-the-art campus provides students with everything they need for an enriching educational
-                experience
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Modern Library" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Modern Library</h3>
-                        <p class="text-gray-600 text-sm">Extensive collection of books, journals, and digital resources</p>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                    <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Computer Labs" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Computer Labs</h3>
-                        <p class="text-gray-600 text-sm">Cutting-edge technology and software for practical learning</p>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Research Centers" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Research Centers</h3>
-                        <p class="text-gray-600 text-sm">Dedicated spaces for innovation and advanced research</p>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Recreation Areas" class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg text-gray-800">Recreation Areas</h3>
-                        <p class="text-gray-600 text-sm">Sports facilities and areas for extracurricular activities</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-8 text-center">
-                <a id="campus-tour" href="https://maps.app.goo.gl/BX2qMsg472Lv5NkA6"
-                    class="inline-flex items-center bg-primary hover:bg-primary/90 text-white py-3 px-6 rounded-full transition duration-300">
-                    <i class="fas fa-map-marker-alt mr-2"></i> Schedule a Campus Tour
-                </a>
-            </div>
-        </div>
-    </section> --}}
 
     <!-- Call to Action -->
     <section class="py-20 bg-gradient-to-r from-primary/90 to-tertiary/90 text-white">
@@ -658,3 +524,4 @@
         </div>
     </section>
 @endsection
+
