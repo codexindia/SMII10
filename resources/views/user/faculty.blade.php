@@ -12,7 +12,7 @@
   </section>
 
   <!-- Faculty Category Filters -->
-  <section class="py-8 bg-white border-b">
+  {{-- <section class="py-8 bg-white border-b">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap justify-center gap-4">
         <button class="px-6 py-2 bg-primary text-white rounded-full hover:bg-primary/90 transition-all duration-300">
@@ -32,7 +32,7 @@
         </button>
       </div>
     </div>
-  </section>
+  </section> --}}
 
   <!-- Faculty Leadership Section -->
   <section class="py-12 bg-gray-50">
@@ -139,10 +139,10 @@
   <section class="py-12 bg-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
-        Computer Science Department
+        All Faculty Members
       </h2>
       <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-        Our Computer Science faculty brings expertise from industry and academia to provide cutting-edge education in computing technologies
+        Our faculty members are dedicated to providing a high-quality education and fostering a culture of research and innovation. 
       </p>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -255,145 +255,11 @@
         </div>
       </div>
       
-      <!-- View All Faculty Link -->
-      <div class="text-center mt-8">
-        <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
-          View all Computer Science Faculty
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
+     
     </div>
   </section>
   
-  <!-- Second Department -->
-  <section class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
-        Business Administration Department
-      </h2>
-      <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-        Our Business faculty combines academic excellence with real-world business experience to prepare students for leadership roles
-      </p>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Faculty Member 1 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-          <div class="p-6 text-center">
-            <img 
-              src="https://randomuser.me/api/portraits/men/22.jpg" 
-              alt="Dr. Mark Reynolds" 
-              class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary/20"
-            />
-            <h3 class="text-xl font-bold mt-4 text-gray-800">Dr. Mark Reynolds</h3>
-            <p class="text-primary font-medium">Professor of Marketing</p>
-            <p class="text-sm text-gray-600 mt-2">Ph.D., Marketing</p>
-            <div class="border-t border-gray-100 my-4 pt-4">
-              <p class="text-sm text-gray-700">
-                Expert in digital marketing and consumer behavior
-              </p>
-            </div>
-            <div class="flex justify-center space-x-3 mt-4">
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="far fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Faculty Member 2 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-          <div class="p-6 text-center">
-            <img 
-              src="https://randomuser.me/api/portraits/women/45.jpg" 
-              alt="Prof. Amanda Garcia" 
-              class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary/20"
-            />
-            <h3 class="text-xl font-bold mt-4 text-gray-800">Prof. Amanda Garcia</h3>
-            <p class="text-primary font-medium">Associate Professor</p>
-            <p class="text-sm text-gray-600 mt-2">Ph.D., Finance</p>
-            <div class="border-t border-gray-100 my-4 pt-4">
-              <p class="text-sm text-gray-700">
-                Specializes in corporate finance and investment strategies
-              </p>
-            </div>
-            <div class="flex justify-center space-x-3 mt-4">
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="far fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Faculty Member 3 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-          <div class="p-6 text-center">
-            <img 
-              src="https://randomuser.me/api/portraits/men/75.jpg" 
-              alt="Dr. James Wilson" 
-              class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary/20"
-            />
-            <h3 class="text-xl font-bold mt-4 text-gray-800">Dr. James Wilson</h3>
-            <p class="text-primary font-medium">Assistant Professor</p>
-            <p class="text-sm text-gray-600 mt-2">Ph.D., Management</p>
-            <div class="border-t border-gray-100 my-4 pt-4">
-              <p class="text-sm text-gray-700">
-                Research focuses on organizational behavior and leadership
-              </p>
-            </div>
-            <div class="flex justify-center space-x-3 mt-4">
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="far fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Faculty Member 4 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-          <div class="p-6 text-center">
-            <img 
-              src="https://randomuser.me/api/portraits/women/36.jpg" 
-              alt="Dr. Rachel Kim" 
-              class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-primary/20"
-            />
-            <h3 class="text-xl font-bold mt-4 text-gray-800">Dr. Rachel Kim</h3>
-            <p class="text-primary font-medium">Associate Professor</p>
-            <p class="text-sm text-gray-600 mt-2">Ph.D., International Business</p>
-            <div class="border-t border-gray-100 my-4 pt-4">
-              <p class="text-sm text-gray-700">
-                Expert in global markets and international trade
-              </p>
-            </div>
-            <div class="flex justify-center space-x-3 mt-4">
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-primary transition-colors duration-300">
-                <i class="far fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- View All Faculty Link -->
-      <div class="text-center mt-8">
-        <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
-          View all Business Administration Faculty
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+  
   
   <!-- Faculty Research & Publications Section -->
   {{-- <section class="py-12 bg-white">

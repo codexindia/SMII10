@@ -1,5 +1,5 @@
 <!-- Tab Navigation -->
-<section id="programs">
+<section id="programs" class="py-8 bg-white border-b">
 <div class="mb-8">
     <!-- For mobile: scrollable tabs -->
     <div class="overflow-x-auto pb-2 md:hidden">
