@@ -1,4 +1,5 @@
 <!-- Tab Navigation -->
+<section id="programs">
 <div class="mb-8">
     <!-- For mobile: scrollable tabs -->
     <div class="overflow-x-auto pb-2 md:hidden">
@@ -44,7 +45,7 @@
         </div>
     @endforeach
 </div>
-
+</section>
 @push('scripts')
 <script>
 document.addEventListener('DOMContentLoaded', function() {
