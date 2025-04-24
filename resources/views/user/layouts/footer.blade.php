@@ -11,7 +11,7 @@
             academic excellence and innovation.
           </p>
           <p class="text-gray-400">
-            In partnership with <span class="font-medium"><a href="https://aisect.org/" class="text-blue-400 hover:text-blue-600 transition duration-300">AISECT</a></span>, the All India Society for Electronics and Computer Technology.
+            Affiliated with <span class="font-medium"><a href="https://aisect.org/" class="text-blue-400 hover:text-blue-600 transition duration-300">AISECT Group of Universities</a></span>, a pioneer in skill-based education. The group includes renowned institutions like RN Tagore University, CV Raman University, and Scope Global University.
           </p>
         </div>
         <div>

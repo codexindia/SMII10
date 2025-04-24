@@ -46,7 +46,7 @@
                         Academy of Higher Education and Skill Development
                     </p>
                     <p class="text-xs font-semibold text-primary">
-                        Approved by AISECT (UGC & AICTE)
+                        Affiliated With AISECT (UGC & AICTE)
                     </p>
                 </div>
             </a>

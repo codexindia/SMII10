@@ -79,7 +79,7 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 animate-fadeIn opacity-0"
                 style="animation: fadeInUp 1s ease 0.6s forwards">
-                <a href="#courses"
+                <a href="{{ route('user.courses').'#programs' }}"
                     class="bg-white text-primary font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105 hover:-translate-y-1">
                     Explore Courses
                 </a>
