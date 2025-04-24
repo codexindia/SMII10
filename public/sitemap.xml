@@ -1,97 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://ahesd.smii.in/</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://ahesd.smii.in/</loc>
+	<lastmod>2025-04-24T11:56:56+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ahesd.smii.in/notice</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ahesd.smii.in/notice</loc>
+	<lastmod>2025-04-24T11:56:56+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ahesd.smii.in/about</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ahesd.smii.in/about</loc>
+	<lastmod>2025-04-24T11:56:56+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ahesd.smii.in/courses</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ahesd.smii.in/courses</loc>
+	<lastmod>2025-04-24T11:56:56+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ahesd.smii.in/faculty</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ahesd.smii.in/faculty</loc>
+	<lastmod>2025-04-24T11:56:56+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ahesd.smii.in/coming-soon</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20IT-ITeS.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Animation,%20Multimedia%20and%20Gaming.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Agriculture.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/courses?filter=skill</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/courses?filter=academic</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/courses?filter=management</loc>
-  <lastmod>2025-04-24T08:31:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Banking,%20Financial%20Services%20and%20Insurance..pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Beauty%20and%20Wellness.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Electronics%20and%20Hardware.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Food%20Processing.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ahesd.smii.in/user/Brochures/AISECT%20Academy%20for%20Media%20and%20Entertainment.pdf</loc>
-  <lastmod>2025-04-12T18:29:26+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://ahesd.smii.in/coming-soon</loc>
+	<lastmod>2025-04-24T11:56:56+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 
+<url>
+	<loc>https://ahesd.smii.in/courses?filter=skill</loc>
+	<lastmod>2025-04-24T11:56:59+01:00</lastmod>
+	<priority>0.9</priority>
+</url>
+<url>
+	<loc>https://ahesd.smii.in/courses?filter=academic</loc>
+	<lastmod>2025-04-24T11:56:59+01:00</lastmod>
+	<priority>0.9</priority>
+</url>
+<url>
+	<loc>https://ahesd.smii.in/courses?filter=management</loc>
+	<lastmod>2025-04-24T11:56:59+01:00</lastmod>
+	<priority>0.9</priority>
+</url>
 
 </urlset>
