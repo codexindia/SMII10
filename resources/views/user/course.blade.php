@@ -351,7 +351,7 @@
                 for the upcoming academic year.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="{{ route('user.comingsoon') }}"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0C-VWP0Yqk2lgUm0G5wOm7yxyrC8sNqi4VkDzrJK9wFcASw/viewform"
                     class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105">
                     Apply for Admission
                 </a>
