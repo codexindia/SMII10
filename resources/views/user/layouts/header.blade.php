@@ -84,7 +84,7 @@
                    <span
                        class="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                </a>
-               <a href="{{ route('user.comingsoon') }}"
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0C-VWP0Yqk2lgUm0G5wOm7yxyrC8sNqi4VkDzrJK9wFcASw/viewform?usp=send_form"
                    class="px-4 py-2 rounded-md text-gray-800 hover:text-primary hover:bg-primary hover:bg-opacity-10 transition-all duration-300 relative group">
                    Admission
                    <span
@@ -124,7 +124,7 @@
                            class="{{ request()->routeIs('user.courses') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Courses</a>
                        <a href="{{ route('user.faculty') }}"
                            class="{{ request()->routeIs('user.faculty') ? 'text-primary bg-primary/10' : 'text-gray-800' }} px-4 py-2 rounded-md hover:bg-primary/10">Faculty</a>
-                       <a href="{{ route('user.comingsoon') }}"
+                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0C-VWP0Yqk2lgUm0G5wOm7yxyrC8sNqi4VkDzrJK9wFcASw/viewform?usp=send_form"
                            class="text-gray-800 px-4 py-2 rounded-md hover:bg-primary/10">Admission</a>
                        <a href="{{ route('user.comingsoon') }}"
                            class="text-gray-800 px-4 py-2 rounded-md hover:bg-primary/10">Results</a>
